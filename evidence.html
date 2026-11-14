@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeti Quest - Докази</title>
+  <link rel="stylesheet" href="style.css?v=40">
+</head>
+<body>
+
+<div class="page-wrapper evidence-wrapper">
+
+  <!-- ХЕДЕР -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <img src="img/LOGO.png" alt="YETI QUEST" style="height: 40px; object-fit: contain;">
+      </a>
+
+      <!-- Десктопная навигация -->
+      <nav class="nav desktop-nav">
+        <a href="expeditions.html" class="nav-link">ЕКСПЕДИЦІЇ</a>
+        <a href="evidence.html" class="nav-link active">ДОКАЗИ</a>
+        <a href="about.html" class="nav-link">ПРО ПРОЄКТ</a>
+      </nav>
+    </div>
+
+    <!-- Десктопные соцсети и кнопка -->
+    <div class="header-actions desktop-actions">
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+          <img src="img/inst.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+      <a href="#joinModal" class="btn btn-outline">ПРИЄДНАТИСЬ<br>ДО ПОШУКІВ</a>
+    </div>
+
+    <!-- Мобильный бургер-меню (без JS) -->
+    <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+    <label for="burger-toggle" class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="mobile-nav-menu">
+      <nav class="nav mobile-nav">
+        <a href="expeditions.html" class="nav-link">ЕКСПЕДИЦІЇ</a>
+        <a href="evidence.html" class="nav-link active">ДОКАЗИ</a>
+        <a href="about.html" class="nav-link">ПРО ПРОЄКТ</a>
+      </nav>
+      <a href="#joinModal" class="btn btn-outline mobile-btn">ПРИЄДНАТИСЬ<br>ДО ПОШУКІВ</a>
+    </div>
+  </header>
+
+  <!-- ЗАГОЛОВОК СТРАНИЦЫ (Исправлен перенос на 4 строки) -->
+  <section class="ev-hero">
+    <h1 class="ev-title">ДОКАЗИ,<br><span class="hl">ЩО ЗАЛИШАЮТЬ<br>ПИТАННЯ</span></h1>
+    <p class="ev-intro">
+      Фотографії, відео, аудіозаписи та свідчення,<br>
+      зібрані дослідниками з різних куточків світу.<br>
+      Кожен доказ — це частина більшої історії, яка<br>
+      ще не має остаточної відповіді.
+    </p>
+  </section>
+
+  <!-- ОСНОВНОЙ БЛОК: ФИЛЬТРЫ | КАТАЛОГ | ДЕТАЛИ -->
+  <main class="ev-layout">
+
+    <!-- ЛЕВАЯ КОЛОНКА: Фильтры -->
+    <aside class="ev-filters" id="evFilters">
+      <input type="checkbox" id="ev-filter-toggle" class="ev-filter-checkbox">
+      <label for="ev-filter-toggle" class="ev-filter-trigger">
+        <span>ФІЛЬТР ДОКАЗІВ</span>
+        <span class="ev-filter-arrow">&#9660;</span>
+      </label>
+
+      <div class="ev-filters-content">
+        <div class="ev-filter-group" data-filter-group="type">
+          <h2 class="ev-filter-title">ТИП ДОКАЗУ</h2>
+          <label class="ev-check">
+            <input type="checkbox" name="type" value="all" checked>
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Усі типи</span>
+            <span class="ev-count">9</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="type" value="photo">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Фотографії</span>
+            <span class="ev-count">5</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="type" value="video">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Відео</span>
+            <span class="ev-count">2</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="type" value="audio">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Аудіозаписи</span>
+            <span class="ev-count">1</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="type" value="testimony">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Свідчення</span>
+            <span class="ev-count">0</span>
+          </label>
+        </div>
+
+        <div class="ev-filter-group" data-filter-group="region">
+          <h2 class="ev-filter-title">РЕГІОН</h2>
+          <label class="ev-check">
+            <input type="checkbox" name="region" value="all" checked>
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Усі регіони</span>
+            <span class="ev-count">9</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="region" value="antarctica">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Антарктида</span>
+            <span class="ev-count">4</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="region" value="east-asia">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Східна Азія</span>
+            <span class="ev-count">2</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="region" value="south-asia">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Південна Азія</span>
+            <span class="ev-count">1</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="region" value="north-america">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Північна Америка</span>
+            <span class="ev-count">1</span>
+          </label>
+          <label class="ev-check">
+            <input type="checkbox" name="region" value="south-america">
+            <span class="ev-box"></span>
+            <span class="ev-check-text">Південна Америка</span>
+            <span class="ev-count">1</span>
+          </label>
+        </div>
+
+        <button type="button" class="ev-reset" id="evResetBtn">СКИНУТИ ФІЛЬТРИ</button>
+      </div>
+    </aside>
+
+    <!-- СРЕДНЯЯ КОЛОНКА: Каталог доказательств -->
+    <section class="ev-results">
+      <div class="ev-found">ЗНАЙДЕНО ДОКАЗІВ: <span id="evCount">9</span></div>
+
+      <div class="ev-grid" id="evGrid">
+        <!-- Кликабельная первая карточка (отпечаток) -->
+        <a href="#evDetail" class="ev-card ev-card-clickable" data-type="photo">
+          <img src="img/знову ніга.png" alt="Відбиток ноги на землі">
+        </a>
+        <button type="button" class="ev-card" data-type="video">
+          <img src="img/єті гуляє.png" alt="Силует істоти в лісі">
+          <img class="ev-play" src="img/кнопка без кутів.png" alt="Відео">
+        </button>
+        <button type="button" class="ev-card" data-type="audio">
+          <img src="img/звучок.png" alt="Аудіозапис">
+          <img class="ev-play" src="img/кнопка без кутів.png" alt="Аудіо">
+        </button>
+        <button type="button" class="ev-card" data-type="photo">
+          <img src="img/шерсть норм обрізана.png" alt="Зразок шерсті">
+        </button>
+        <button type="button" class="ev-card" data-type="photo">
+          <img src="img/прогулявся.png" alt="Сліди на снігу">
+        </button>
+        <button type="button" class="ev-card" data-type="photo">
+          <img src="img/палатку порвалі.png" alt="Розірваний намет">
+        </button>
+        <button type="button" class="ev-card" data-type="video">
+          <img src="img/єті блукає.png" alt="Істота в нічному лісі">
+          <img class="ev-play" src="img/кнопка без кутів.png" alt="Відео">
+        </button>
+        <button type="button" class="ev-card" data-type="photo">
+          <img src="img/дерево ударілі.png" alt="Пошкоджене дерево">
+        </button>
+        <button type="button" class="ev-card" data-type="photo">
+          <img src="img/попа єті.png" alt="Розмитий силует істоти">
+        </button>
+      </div>
+
+      <div class="ev-pagination">
+        <button type="button" class="ev-page-btn" aria-label="Попередня сторінка">&larr;</button>
+        <button type="button" class="ev-page-btn active" aria-current="page">1</button>
+        <button type="button" class="ev-page-btn" aria-label="Наступна сторінка">&rarr;</button>
+      </div>
+    </section>
+
+    <!-- ПРАВАЯ КОЛОНКА / ПОЛНОЭКРАННАЯ ДЕТАЛКА (Исправленный дизайн по макету) -->
+    <section class="ev-detail" id="evDetail">
+      <div class="ev-detail-content">
+
+        <!-- Верхний навигационный блок -->
+        <div class="ev-detail-nav">
+          <a href="#" class="ev-back-link">&larr; ПОВЕРНУТИСЬ ДО СПИСКУ ДОКАЗІВ</a>
+          <a href="#" class="ev-detail-close">X</a>
+        </div>
+
+        <h2 class="ev-detail-title">СЛІД У ДОЛИНІ ЛАНГТАНГ</h2>
+        <div class="ev-detail-location-wrap">
+          <span class="ev-detail-date">14 ЛЮТОГО 2026</span>
+          <br>
+          <span class="ev-detail-place">Долина Лангтанг, Непал</span>
+        </div>
+
+        <div class="ev-detail-divider"></div>
+
+        <p class="ev-detail-text">
+          Слід виявили на світанку неподалік від базового<br>
+          табору. Незвичний розмір і форма відбитка не<br>
+          збігаються зі слідами відомих тварин регіону. Поруч<br>
+          інших слідів не знайдено.
+        </p>
+
+        <ul class="ev-detail-meta">
+          <li><span class="label">Тип:</span> Фотографія</li>
+          <li><span class="label">Автор:</span> Команда <span class="accent">YETI Quest</span></li>
+          <li><span class="label">Координати:</span> 28°12'51.8"N 85°42'22.0"E</li>
+        </ul>
+
+        <div class="ev-detail-img-box">
+          <img class="ev-detail-img" src="img/знову ніга.png" alt="Слід у долині Лангтанг">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Соцсети -->
+  <div class="mobile-bottom-socials">
+    <a href="https://instagram.com" target="_blank" rel="noopener"><img src="img/inst.png" alt="Instagram"></a>
+    <a href="https://tiktok.com" target="_blank" rel="noopener"><img src="img/tiktok.png" alt="TikTok"></a>
+  </div>
+
+  <footer class="footer">
+    <p>Незалежний дослідницький проєкт • © 2026 YETI QUEST • Усі права захищені</p>
+  </footer>
+
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal-overlay" id="joinModal">
+  <div class="modal-content">
+    <a href="#" class="modal-close">X</a>
+    <p class="modal-intro">Залиш свої дані, щоб приєднатися до команди Yeti Quest.<br>Можливо, саме ти допоможеш знайти наступний доказ.</p>
+    <form class="join-form">
+      <label>ВАШЕ ІМ'Я:</label><input type="text" placeholder="Ваше Ім'я">
+      <label>ЗВІДКИ ВИ?</label><input type="text" placeholder="Країна, Місто">
+      <label>ВАША ПОШТА:</label><input type="email" placeholder="user@example.com">
+      <label>ВАША РОЛЬ:</label>
+      <select>
+        <option value="" disabled selected>ОБЕРІТЬ НАПРЯМОК</option>
+        <option value="researcher">Дослідник</option>
+        <option value="photographer">Фотограф</option>
+        <option value="traveler">Мандрівник</option>
+        <option value="volunteer">Волонтер</option>
+        <option value="other">Інше</option>
+      </select>
+      <label>КОРОТКО ПРО СЕБЕ:</label>
+      <textarea placeholder="Розкажіть, чому хочете приєднатися до..."></textarea>
+      <div class="modal-submit-wrap">
+        <button type="button" class="btn btn-primary">НАДІСЛАТИ ЗАЯВКУ</button>
+      </div>
+    </form>
+    <p class="modal-outro">Ми зв'яжемося з вами, якщо ваша кандидатура підійде для однієї з майбутніх експедицій.</p>
+  </div>
+</div>
+
+</body>
+</html>

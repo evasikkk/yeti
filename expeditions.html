@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeti Quest - Експедиції</title>
+  <link rel="stylesheet" href="style.css?v=16">
+</head>
+<body>
+
+<div class="page-wrapper expeditions-wrapper">
+
+  <!-- Перемикач бургер-меню (мобільна версія). Має стояти ПЕРЕД <header> -->
+  <input type="checkbox" id="menuToggle" class="menu-toggle" aria-label="Відкрити меню">
+
+  <!-- ХЕДЕР -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <img src="img/LOGO.png" alt="YETI QUEST" style="height: 40px; object-fit: contain;">
+      </a>
+
+      <nav class="nav">
+        <a href="expeditions.html" class="nav-link active">ЕКСПЕДИЦІЇ</a>
+        <a href="evidence.html" class="nav-link">ДОКАЗИ</a>
+        <a href="about.html" class="nav-link">ПРО ПРОЄКТ</a>
+      </nav>
+    </div>
+
+    <div class="header-actions">
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+          <img src="img/inst.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+      <a href="#joinModal" class="btn btn-outline">ПРИЄДНАТИСЬ<br>ДО ПОШУКІВ</a>
+    </div>
+
+    <!-- Кнопка-бургер (видима лише на мобільних) -->
+    <label for="menuToggle" class="burger" aria-label="Меню"><span></span><span></span><span></span></label>
+  </header>
+
+  <!-- ОСНОВНИЙ БЛОК: зліва список, справа деталі -->
+  <main class="exp-layout">
+
+    <!-- ЛІВА КОЛОНКА: перелік експедицій.
+         На мобільних це випадаючий список: перемикач (checkbox) + підпис-<label> -->
+    <aside class="exp-sidebar">
+
+      <input type="checkbox" id="expListToggle" class="exp-toggle-input" aria-label="Показати список експедицій">
+
+      <label for="expListToggle" class="exp-sidebar-head">
+        <span>УСІ ЕКСПЕДИЦІЇ</span>
+        <span class="exp-count">3</span>
+        <span class="exp-toggle-icon"></span>
+      </label>
+
+      <div class="exp-list">
+
+        <a href="expeditions.html" class="exp-card active" aria-current="true">
+          <img src="img/ЛАНГТАНГ(1).png" alt="Долина Лангтанг">
+          <div class="exp-card-info">
+            <div class="exp-card-name">ДОЛИНА ЛАНГТАНГ</div>
+            <div class="exp-card-meta">НЕПАЛ • ЛЮТ 2026</div>
+            <span class="exp-card-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <img src="img/КХУМБУ.png" alt="Регіон Кхумбу">
+          <div class="exp-card-info">
+            <div class="exp-card-name">РЕГІОН КХУМБУ</div>
+            <div class="exp-card-meta">НЕПАЛ • СІЧ 2026</div>
+            <span class="exp-card-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <img src="img/СИЧУАНСЬКІ ГОРИ.png" alt="Сичуанські гори">
+          <div class="exp-card-info">
+            <div class="exp-card-name">СИЧУАНСЬКІ ГОРИ</div>
+            <div class="exp-card-meta">КИТАЙ • ЛИС 2025</div>
+            <span class="exp-card-arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="exp-soon">СКОРО...</div>
+
+    </aside>
+
+    <!-- ПРАВА КОЛОНКА: деталі обраної експедиції -->
+    <section class="exp-detail">
+
+      <div class="exp-top">
+
+        <!-- Фото з координатами -->
+        <div class="exp-photo-col">
+          <div class="exp-coords">
+            <span>28°12'51.8"N 85°42'22.0"E</span>
+            <span>лютий 2026 року</span>
+          </div>
+          <div class="exp-photo">
+            <img src="img/картінка крутая с чєлом.png" alt="Долина Лангтанг">
+          </div>
+          <div class="exp-archive">АРХІВ № YQ-401</div>
+        </div>
+
+        <!-- Назва, місце, мета, факти -->
+        <div class="exp-info">
+          <h1 class="exp-title">ДОЛИНА<br>ЛАНГТАНГ</h1>
+          <div class="exp-where">НЕПАЛ • <span class="hl">ЛЮТ <span class="num">2026</span></span></div>
+
+          <div class="exp-meta-block">
+            <div class="exp-label">МЕТА ЕКСПЕДИЦІЇ</div>
+            <!-- class="br-d" - перенос лише на комп'ютері, class="br-m" - лише на мобільному -->
+            <p class="exp-goal">
+              Перевірити район останніх повідомлень,<br>
+              зафіксувати можливі сліди та встановити<br class="br-d">
+              маршрут<br class="br-m">
+              невідомої істоти.
+            </p>
+            <ul class="exp-facts">
+              <li><strong>Тривалість:</strong> <span class="val">12</span> днів</li>
+              <li><strong>Висота:</strong> <span class="val">2&nbsp;800-4&nbsp;100</span> м</li>
+              <li><strong>Команда:</strong> <span class="val">6</span> дослідників</li>
+              <li><strong>Статус:</strong> <span class="val">Завершено</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Опис експедиції (переноси як на макеті: окремо для комп'ютера та мобільного) -->
+      <p class="exp-desc">
+        Після серії повідомлень місцевих жителів<br class="br-m">
+        команда Yeti Quest вирушила у віддалену частину<br class="br-m">
+        долини Лангтанг.<br class="br-d">
+        Протягом кількох тижнів<br class="br-m">
+        очевидці повідомляли про дивні сліди поблизу<br class="br-m">
+        верхньої межі лісу та рух великої постаті<br class="br-d">
+        на<br class="br-m">
+        схилах після заходу сонця.
+      </p>
+
+      <!-- Фотографії та цитата -->
+      <div class="exp-bottom">
+
+        <div class="exp-gallery-title">ФОТОГРАФІЇ З ЕКСПЕДИЦІЇ</div>
+
+        <div class="exp-photos">
+          <img src="img/ніга ддля експедицій.png" alt="Слід на снігу">
+          <img src="img/пейзажик гір.png" alt="Гірський краєвид">
+          <img src="img/халабутка.png" alt="Намет експедиції">
+        </div>
+
+        <blockquote class="exp-quote">
+          <img class="exp-quote-icon" src="img/лапки.png" alt="">
+          <p>«Близько третьої ночі ми почули звук зі<br>
+            схилу над табором.<br>
+            Спочатку подумали, що зійшов сніг. Але потім<br>
+            він повторився тричі, з однаковим<br>
+            інтервалом.<br>
+            Місцевий провідник сказав лише:"Воно<br>
+            близько".»</p>
+          <cite>— учасник експедиції YQ-401</cite>
+        </blockquote>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <!-- Соцмережі в підвалі (видимі лише на мобільних) -->
+    <div class="footer-socials">
+      <a href="https://instagram.com" target="_blank" rel="noopener">
+        <img src="img/inst.png" alt="Instagram">
+      </a>
+      <a href="https://tiktok.com" target="_blank" rel="noopener">
+        <img src="img/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+    <p>Незалежний дослідницький проєкт • © 2026 YETI QUEST •<br class="br-m"> Усі права захищені</p>
+  </footer>
+
+</div>
+
+<!-- МОДАЛЬНЕ ВІКНО -->
+<div class="modal-overlay" id="joinModal">
+  <!-- Вміст модального вікна залишається без змін -->
+  <div class="modal-content">
+    <a href="#" class="modal-close">X</a>
+    <p class="modal-intro">Залиш свої дані, щоб приєднатися до команди Yeti Quest.<br>Можливо, саме ти допоможеш знайти наступний доказ.</p>
+    <form class="join-form">
+      <label>ВАШЕ ІМ'Я:</label><input type="text" placeholder="Ваше Ім'я">
+      <label>ЗВІДКИ ВИ?</label><input type="text" placeholder="Країна, Місто">
+      <label>ВАША ПОШТА:</label><input type="email" placeholder="user@example.com">
+      <label>ВАША РОЛЬ:</label>
+      <select>
+        <option value="" disabled selected>ОБЕРІТЬ НАПРЯМОК</option>
+        <option value="researcher">Дослідник</option>
+        <option value="photographer">Фотограф</option>
+        <option value="traveler">Мандрівник</option>
+        <option value="volunteer">Волонтер</option>
+        <option value="other">Інше</option>
+      </select>
+      <label>КОРОТКО ПРО СЕБЕ:</label>
+      <textarea placeholder="Розкажіть, чому хочете приєднатися до..."></textarea>
+      <div class="modal-submit-wrap">
+        <button type="button" class="btn btn-primary">НАДІСЛАТИ ЗАЯВКУ</button>
+      </div>
+    </form>
+    <p class="modal-outro">Ми зв'яжемося з вами, якщо ваша кандидатура підійде для однієї з майбутніх експедицій.</p>
+  </div>
+</div>
+
+</body>
+</html>

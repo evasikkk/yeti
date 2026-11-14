@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeti Quest - Про проєкт</title>
+  <link rel="stylesheet" href="style.css?v=13">
+</head>
+<body>
+
+<div class="page-wrapper about-wrapper">
+
+  <!-- ХЕДЕР -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <img src="img/LOGO.png" alt="YETI QUEST" style="height: 40px; object-fit: contain;">
+      </a>
+
+      <nav class="nav">
+        <a href="expeditions.html" class="nav-link">ЕКСПЕДИЦІЇ</a>
+        <a href="evidence.html" class="nav-link">ДОКАЗИ</a>
+        <a href="about.html" class="nav-link active">ПРО ПРОЄКТ</a>
+      </nav>
+    </div>
+
+    <div class="header-actions">
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+          <img src="img/inst.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+      <a href="#joinModal" class="btn btn-outline">ПРИЄДНАТИСЬ<br>ДО ПОШУКІВ</a>
+    </div>
+  </header>
+
+  <!-- ЗАГОЛОВОК СТОРІНКИ -->
+  <section class="about-hero">
+    <h1 class="page-title">ПРО ПРОЄКТ</h1>
+    <h2 class="about-subtitle">НЕ КОЖНА ЛЕГЕНДА — <span class="hl">ЛИШЕ ЛЕГЕНДА</span></h2>
+    <div class="about-intro">
+      Протягом століть у різних куточках світу люди розповідали про істот, яких не мало існувати.<br>
+      Сліди зникали під снігом. Свідчення називали вигадками. Фотографії — помилками.<br>
+      <span class="accent-text">Ми вирішили перевірити.</span>
+    </div>
+  </section>
+
+  <!-- ОСНОВНИЙ БЛОК З ФОТО ТА ТЕКСТОМ -->
+  <section class="about-content">
+
+    <!-- Ліва колонка: Фото архіву з координатами -->
+    <div class="about-image-col">
+      <div class="image-meta-top">
+        <span>28°35'46.0"N 83°49'13.0"E</span>
+        <span>січень 2000 року</span>
+      </div>
+
+      <div class="about-img-wrap">
+        <img src="img/ПЕРШЕ ФОТО РЯЛЬНО.png" alt="Архівне фото">
+      </div>
+
+      <div class="image-meta-bottom">
+        <span>АРХІВ № YQ-001</span>
+      </div>
+    </div>
+
+    <!-- Права колонка: Текстові блоки -->
+    <div class="about-text-col">
+
+      <div class="about-block">
+        <h2>ЯК УСЕ <span class="hl">ПОЧАЛОСЯ?</span></h2>
+        Усе почалося з одного архівного знімка.<br>
+        Фотографію зробила група туристів у Гімалаях у січні 2000 року. На одному з віддалених схилів<br>
+        випадково зафіксували темний силует. Знімок був нечітким, координати — приблизними, а пояснення<br>
+        очевидців суперечили одне одному.<br>
+        Майже два десятиліття фотографія залишалася серед приватних архівних матеріалів. У 2018 році її<br>
+        передали групі незалежних дослідників, які вирішили встановити місце зйомки та перевірити історію<br>
+        очевидців.<br><br>
+        Ми не знайшли відповіді. Зате знайшли десятки схожих історій.<br>
+        Так з'явився <span class="accent-text">Yeti Quest</span>.
+      </div>
+
+      <div class="about-block">
+        <h2>ХТО <span class="hl">МИ?</span></h2>
+        <span class="accent-text">Yeti Quest</span> — незалежний дослідницький проєкт, присвячений пошуку доказів існування снігової<br>
+        людини.<br>
+        Ми досліджуємо віддалені регіони, збираємо свідчення очевидців, вивчаємо фото-, відео- та<br>
+        аудіоматеріали й організовуємо експедиції у місця ймовірних появ.<br>
+        До роботи долучаються ентузіасти, дослідники, фотографи, мандрівники та люди з різних куточків<br>
+        світу.<br><br>
+        <span class="accent-text">Наша мета — не довести легенду. Наша мета — наблизитися до істини.</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>Незалежний дослідницький проєкт • © 2026 YETI QUEST • Усі права захищені</p>
+  </footer>
+
+</div>
+
+<!-- МОДАЛЬНЕ ВІКНО -->
+<div class="modal-overlay" id="joinModal">
+  <!-- Вміст модального вікна залишається без змін -->
+  <div class="modal-content">
+    <a href="#" class="modal-close">X</a>
+    <p class="modal-intro">Залиш свої дані, щоб приєднатися до команди Yeti Quest.<br>Можливо, саме ти допоможеш знайти наступний доказ.</p>
+    <form class="join-form">
+      <label>ВАШЕ ІМ'Я:</label><input type="text" placeholder="Ваше Ім'я">
+      <label>ЗВІДКИ ВИ?</label><input type="text" placeholder="Країна, Місто">
+      <label>ВАША ПОШТА:</label><input type="email" placeholder="user@example.com">
+      <label>ВАША РОЛЬ:</label>
+      <select>
+        <option value="" disabled selected>ОБЕРІТЬ НАПРЯМОК</option>
+        <option value="researcher">Дослідник</option>
+        <option value="photographer">Фотограф</option>
+        <option value="traveler">Мандрівник</option>
+        <option value="volunteer">Волонтер</option>
+        <option value="other">Інше</option>
+      </select>
+      <label>КОРОТКО ПРО СЕБЕ:</label>
+      <textarea placeholder="Розкажіть, чому хочете приєднатися до..."></textarea>
+      <div class="modal-submit-wrap">
+        <button type="button" class="btn btn-primary">НАДІСЛАТИ ЗАЯВКУ</button>
+      </div>
+    </form>
+    <p class="modal-outro">Ми зв'яжемося з вами, якщо ваша кандидатура підійде для однієї з майбутніх експедицій.</p>
+  </div>
+</div>
+
+</body>
+</html>

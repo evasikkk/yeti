@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeti Quest - Головна</title>
+  <link rel="stylesheet" href="style.css?v=20">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- ХЕДЕР -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <img src="img/LOGO.png" alt="YETI QUEST" style="height: 40px; object-fit: contain;">
+      </a>
+
+      <!-- Десктопне меню -->
+      <nav class="nav desktop-nav">
+        <a href="expeditions.html" class="nav-link">ЕКСПЕДИЦІЇ</a>
+        <a href="evidence.html" class="nav-link">ДОКАЗИ</a>
+        <a href="about.html" class="nav-link">ПРО ПРОЄКТ</a>
+      </nav>
+    </div>
+
+    <!-- Десктопні соцмережі та кнопка -->
+    <div class="header-actions desktop-actions">
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+          <img src="img/inst.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+      <a href="#joinModal" class="btn btn-outline">ПРИЄДНАТИСЬ<br>ДО ПОШУКІВ</a>
+    </div>
+
+    <!-- Мобільна іконка бургер-меню (без JS) -->
+    <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+    <label for="burger-toggle" class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Мобільне випадаюче меню -->
+    <div class="mobile-nav-menu">
+      <nav class="nav mobile-nav">
+        <a href="expeditions.html" class="nav-link">ЕКСПЕДИЦІЇ</a>
+        <a href="evidence.html" class="nav-link">ДОКАЗИ</a>
+        <a href="about.html" class="nav-link">ПРО ПРОЄКТ</a>
+      </nav>
+      <a href="#joinModal" class="btn btn-outline mobile-btn">ПРИЄДНАТИСЬ<br>ДО ПОШУКІВ</a>
+    </div>
+  </header>
+
+  <!-- ГОЛОВНИЙ БЛОК -->
+  <section class="hero">
+    <p class="sub-title">ТАЄМНИЦІ БЛИЖЧЕ, НІЖ ЗДАЄТЬСЯ</p>
+    <h1 class="main-title">ДЕЯКІ ЛЕГЕНДИ<br><span class="accent-text">ВСЕ ЩЕ ЖИВУТЬ</span></h1>
+
+    <p class="hero-description">
+      Відстежуй. Досліджуй. Відкривай.<br>
+      Приєднуйся до світової спільноти у пошуках найзагадковішої<br>істоти на планеті.
+    </p>
+
+    <a href="evidence.html" class="btn btn-primary">РОЗПОЧАТИ ПОШУК &rarr;</a>
+  </section>
+
+  <!-- СЕКЦІЯ З БЛОКАМИ -->
+  <section class="dashboard">
+
+    <!-- Блок: Останні докази -->
+    <div class="card">
+      <div class="card-header">
+        <h2>ОСТАННІ ДОКАЗИ</h2>
+        <a href="evidence.html" class="link-more">ДИВИТИСЬ УСІ</a>
+      </div>
+
+      <div class="evidence-grid">
+        <div class="evidence-item">
+          <img src="img/НІГА.png" alt="Слід">
+          <h3>СЛІД</h3>
+          <p>Долина Лангтанг<br>Лютий 2026</p>
+        </div>
+        <div class="evidence-item">
+          <img src="img/ЄТІ ЖУТКО В ЛІСІ.png" alt="Запис з фотопастки">
+          <h3>ЗАПИС З ФОТОПАСТКИ</h3>
+          <p>Сичуанські гори<br>Листопад 2025</p>
+        </div>
+        <div class="evidence-item">
+          <img src="img/АУДІОЗАПИС ЯКИЙ МИ НЕ БУДЕМО РЕАЛІЗОВУВАТИ.png" alt="Аудіозапис">
+          <h3>АУДІОЗАПИС</h3>
+          <p>Східні Гімалаї<br>Січень 2025</p>
+        </div>
+      </div>
+
+      <div class="card-footer-grid">
+        <div class="footer-text-col">
+          <p>Думаєш, ти бачив <span class="accent-text">його?</span><br>Твоя історія може стати наступним доказом.</p>
+        </div>
+        <a href="mailto:yetiquest@gmail.com?subject=Свідчення для Yeti Quest" class="btn btn-outline btn-sm btn-full">НАДІСЛАТИ СВІДЧЕННЯ &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Блок: Останні експедиції -->
+    <div class="card">
+      <div class="card-header">
+        <h2>ОСТАННІ ЕКСПЕДИЦІЇ</h2>
+        <a href="expeditions.html" class="link-more">ДИВИТИСЬ УСІ</a>
+      </div>
+      <div class="expeditions-list">
+        <div class="expedition-item">
+          <img src="img/ЛАНГТАНГ(1).png" alt="Долина Лангтанг">
+          <div class="exp-info">
+            <h3>Долина Лангтанг</h3>
+            <p>НЕПАЛ • ЛЮТ 2026</p>
+          </div>
+          <span class="members">
+            <img src="img/people.png" alt="Учасники" class="icon-people"> 6
+          </span>
+        </div>
+        <div class="expedition-item">
+          <img src="img/КХУМБУ.png" alt="Регіон Кхумбу">
+          <div class="exp-info">
+            <h3>Регіон Кхумбу</h3>
+            <p>НЕПАЛ • СІЧ 2026</p>
+          </div>
+          <span class="members">
+            <img src="img/people.png" alt="Учасники" class="icon-people"> 7
+          </span>
+        </div>
+        <div class="expedition-item">
+          <img src="img/СИЧУАНСЬКІ ГОРИ.png" alt="Сичуанські гори">
+          <div class="exp-info">
+            <h3>Сичуанські гори</h3>
+            <p>КИТАЙ • ЛИС 2025</p>
+          </div>
+          <span class="members">
+            <img src="img/people.png" alt="Учасники" class="icon-people"> 10
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Блок: Карта появ -->
+    <div class="card card-map">
+      <h2>КАРТА ПОЯВ</h2>
+      <a href="#mapModal" class="map-container">
+        <img src="img/MAP.png" alt="Карта" class="map-image">
+
+        <div class="map-pin">
+          <img src="img/ЗНАЧОК З КАРТИ.png" alt="Pin" class="pin-img">
+          <div class="pin-info">
+            <span class="pin-title">ОСТАННЯ ВІДОМА ПОЯВА</span>
+            <span class="pin-sub">Долина Лангтанг, Непал</span>
+            <span class="pin-date">27.02.2026</span>
+          </div>
+        </div>
+      </a>
+      <div class="coords">28°12'51.8"N 85°42'22.0"E</div>
+    </div>
+
+  </section>
+
+  <!-- Соціальні мережі внизу для мобільної версії -->
+  <div class="mobile-bottom-socials">
+    <a href="https://instagram.com" target="_blank" rel="noopener">
+      <img src="img/inst.png" alt="Instagram">
+    </a>
+    <a href="https://tiktok.com" target="_blank" rel="noopener">
+      <img src="img/tiktok.png" alt="TikTok">
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>Незалежний дослідницький проєкт • © 2026 YETI QUEST • Усі права захищені</p>
+  </footer>
+
+</div>
+
+<!-- МОДАЛЬНЕ ВІКНО РЕЄСТРАЦІЇ -->
+<div class="modal-overlay" id="joinModal">
+  <div class="modal-content">
+    <a href="#" class="modal-close">X</a>
+
+    <p class="modal-intro">Залиш свої дані, щоб приєднатися до команди Yeti Quest.<br>Можливо, саме ти допоможеш знайти наступний доказ.</p>
+
+    <form class="join-form">
+      <label>ВАШЕ ІМ'Я:</label>
+      <input type="text" placeholder="Ваше Ім'я">
+
+      <label>ЗВІДКИ ВИ?</label>
+      <input type="text" placeholder="Країна, Місто">
+
+      <label>ВАША ПОШТА:</label>
+      <input type="email" placeholder="user@example.com">
+
+      <label>ВАША РОЛЬ:</label>
+      <select>
+        <option value="" disabled selected>ОБЕРІТЬ НАПРЯМОК</option>
+        <option value="researcher">Дослідник</option>
+        <option value="photographer">Фотограф</option>
+        <option value="traveler">Мандрівник</option>
+        <option value="volunteer">Волонтер</option>
+        <option value="other">Інше</option>
+      </select>
+
+      <label>КОРОТКО ПРО СЕБЕ:</label>
+      <textarea placeholder="Розкажіть, чому хочете приєднатися до..."></textarea>
+
+      <div class="modal-submit-wrap">
+        <button type="button" class="btn btn-primary">НАДІСЛАТИ ЗАЯВКУ</button>
+      </div>
+    </form>
+
+    <p class="modal-outro">Ми зв'яжемося з вами, якщо ваша кандидатура підійде для однієї з майбутніх експедицій.</p>
+  </div>
+</div>
+
+<!-- МОДАЛЬНЕ ВІКНО ДЛЯ КАРТИ (ФУЛСКРІН) -->
+<div class="modal-overlay" id="mapModal">
+  <div class="modal-content map-modal-content">
+    <a href="#" class="modal-logo">
+      <img src="img/LOGO.png" alt="YETI QUEST" style="height: 40px; object-fit: contain;">
+    </a>
+    <a href="#" class="modal-close map-close">X</a>
+    <img src="img/карта фулл.png" alt="Повна карта" class="full-map-image">
+  </div>
+</div>
+
+</body>
+</html>
