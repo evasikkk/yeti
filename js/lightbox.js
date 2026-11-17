@@ -114,6 +114,24 @@
     return cards.filter(function (c) { return c.style.display !== 'none'; });
   }
 
+    // у CSS тексту панелі стоїть white-space: nowrap, тому рядки переносимо самі (<br>)
+  function setWrapped(node, text, max) {
+    if (!node) return;
+    const words = text.split(' ');
+    const lines = [];
+    let line = '';
+    words.forEach(function (w) {
+      if (line && (line + ' ' + w).length > max) { lines.push(line); line = w; }
+      else line = line ? line + ' ' + w : w;
+    });
+    if (line) lines.push(line);
+    node.textContent = '';
+    lines.forEach(function (l, i) {
+      if (i) node.appendChild(document.createElement('br'));
+      node.appendChild(document.createTextNode(l));
+    });
+  }
+
   // ---------- права панель з деталями (десктоп) ----------
   function fillPanel(info) {
     const q = function (s) { return document.querySelector(s); };
@@ -121,7 +139,7 @@
     set('.ev-detail-title', info.d.title);
     set('.ev-detail-date', info.d.date);
     set('.ev-detail-place', info.d.place);
-    set('.ev-detail-text', info.d.text);
+    setWrapped(q('.ev-detail-text'), info.d.text, 46);
     const meta = document.querySelectorAll('.ev-detail-meta li');
     if (meta[0]) meta[0].innerHTML = '<span class="label">Тип:</span> ' + info.type;
     if (meta[2]) meta[2].innerHTML = '<span class="label">Координати:</span> ' + info.d.coords;
