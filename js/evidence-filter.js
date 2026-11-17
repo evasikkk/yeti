@@ -90,7 +90,7 @@
       Object.keys(groups).forEach(function (name) {
         groups[name].forEach(function (i) { i.checked = (i.value === 'all'); });
       });
-      apply();
+      apply();  
     });
   }
 
