@@ -55,3 +55,12 @@
     '#mapModal .full-map-image{width:100vw;height:100vh;object-fit:cover}';
   document.head.appendChild(s);
 })();
+
+// Фавікон сайту
+(function () {
+  document.querySelectorAll('link[rel~="icon"]').forEach(function (l) { l.remove(); });
+  var link = document.createElement('link');
+  link.rel = 'icon';
+  link.href = 'img/icon.png';   // ← тут має бути твоє розширення файлу
+  document.head.appendChild(link);
+})();
