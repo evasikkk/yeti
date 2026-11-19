@@ -26,7 +26,7 @@
     // каждое правило возвращает текст ошибки или '' если всё хорошо
     const rules = [
       { el: fields.name,  test: function (v) { return v.trim().length < 2 ? "Вкажіть ім'я" : ''; } },
-      { el: fields.place, test: function (v) { return v.trim().length < 2 ? 'Вкажіть країну та місто' : ''; } },
+      { el: fields.place, test: function (v) { return v.trim().length < 2 ? 'Вкажіть локацію' : ''; } },
       { el: fields.email, test: function (v) {
           if (!v.trim()) return 'Вкажіть пошту';
           return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? '' : 'Пошта має містити @ і домен';
