@@ -46,3 +46,12 @@
 
   sync();
 })();
+
+// Виправлення модалки карти (перебиває загальне .modal-content)
+(function () {
+  var s = document.createElement('style');
+  s.textContent =
+    '#mapModal .map-modal-content{max-height:none;overflow:hidden;border:none;width:100vw;height:100vh;padding:0}' +
+    '#mapModal .full-map-image{width:100vw;height:100vh;object-fit:cover}';
+  document.head.appendChild(s);
+})();
